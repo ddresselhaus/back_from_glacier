@@ -1,4 +1,4 @@
-# back_from_glacier
+# Back From Glacier
 
 ## Why I wrote these Scripts
 When Amazon first introduced Glacier several years back, I was ecstatic. Glacier was 1/10 of the price of standard storage, and I ended up moving nearly a TB of data over to Glacier. But not long after that, they dropped the price of standard storage and I began to miss the accessibilty of standard storage. Unfortunately the conversion process is only one way. So in order to move Glacier storage back to Standard you have to restore all of the files and then copy them over to a new bucket. Or at least, that's the easiest solution I've come up with.
@@ -26,6 +26,7 @@ From the repo root,
 ```
 
 ### Copying to new bucket
+AWS takes around 4 hours (sometimes longer) to restore the files. Once restoration is complete, rom the repo root, run:
 ```
  $ ruby copy_to_new_bucket.rb old_bucket_name new_bucket_name
 ```
