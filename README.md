@@ -26,7 +26,7 @@ From the repo root,
 ```
 
 ### Copying to new bucket
-AWS takes around 4 hours (sometimes longer) to restore the files. Once restoration is complete, rom the repo root, run:
+AWS takes around 4 hours (sometimes longer) to restore the files. Once restoration is complete, from the repo root, run:
 ```
  $ ruby copy_to_new_bucket.rb old_bucket_name new_bucket_name
 ```
